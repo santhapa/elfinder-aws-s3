@@ -1,0 +1,24 @@
+{
+  "name": "santhapa/elfinder-aws-s3",
+  "description": "AWS S3 filesystem for elFinder",
+  "license": "MIT",
+  "keywords": ["elfinder", "flysystem", "filesystem", "aws"],
+  "authors": [
+    {
+      "name": "Sanjip Thapa",
+      "email": "sanjip.thapa@f1soft.com"
+    }
+  ],
+  "require": {
+    "php": ">= 8.0",
+    "studio-42/elfinder": "^2.1.10",
+    "league/flysystem-aws-s3-v3": "^3.0",
+    "intervention/image": "^2.0"
+  },
+  "autoload": {
+    "classmap": ["elFinderVolumeAwsS3Flysystem.php"],
+    "psr-4": {
+      "SanThapa\\elFinderFlysystem\\": "src/"
+    }
+  }
+}
