@@ -217,6 +217,10 @@ class VolumeDriver extends \elFinderVolumeDriver
             }
         }
 
+        if ($this->fs->has($path)) {
+            $stat['url'] = $this->URL.$path;
+        }
+
         return $stat;
     }
 
